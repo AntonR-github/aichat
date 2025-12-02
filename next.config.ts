@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  distDir: "build",
+   experimental: {
+    turbo: false, // disable turbopack
+  },
 };
 
 export default nextConfig;
